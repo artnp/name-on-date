@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
+        body{
+            font-family: 'Srisakdi', cursive;
+            font-size:x-large
+        }
+        </style>
+    
+    <title>ตั้ง ชื่อ บุตร์</title>
+</head>
+<body>
+    <br><br><br><br><br><br>
+    <center>
+    <h1>ตั้ง ชื่อ บุตร์</h1>
+    <select id="date" style="font-size:24px;">
+        <option value="ชาย ชื่อ แล - หญิง ชื่อ แก้ว">วันอาทิตย์</option>
+        <option value="ชาย ชื่อ วัน - หญิง ชื่อ เล็ก">วันจันทร์</option>
+        <option value="ชาย ชื่อ โพ - หญิง ชื่อ คำ">วันอังคาร</option>
+        <option value="ชาย ชื่อ มี - หญิง ชื่อ มา">วันพุฒ</option>
+        <option value="ชาย ชื่อ เทียง ชื่อ บุญ - หญิง ชื่อ เภา ชื่อ พรหม">วันพฤหัศบดี</option>
+        <option value="ชาย ชื่อ เหลือ - หญิง ชื่อ พิน">วันสุกร์</option>
+        <option value="ชาย ชื่อ บัว - หญิง ชื่อ ปิ่น">วันเสาร์</option>
+      </select>
+    
+  => <button class="cal" onsubmit="cal()" style="font-size:18px">สร้างชื่อ</button>
+    <br><br><hr>
+    
+    <b><div id="text"></div></b>
+<p></p>
+    </center>
+    <script>
+        
+        function cal() {
+   
+
+            x = document.getElementById("date");
+            y = x.value;
+
+document.getElementById('text').innerHTML=y
+
+
+
+
+}
+document.querySelector('.cal').addEventListener("click", ()=>cal());
+
+
+    </script>
+</body>
+</html>
